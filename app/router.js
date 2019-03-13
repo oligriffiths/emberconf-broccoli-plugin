@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('index', { path: '/' });
   this.route('blog.index', { path: '/blog' });
   this.route('blog.path', { path: '/blog/*path' });
+  this.route('inline');
 });
 
 export default Router;

@@ -1,9 +1,20 @@
-My App
+<header id="header">
+    <div class="container">
+        <img class="logo" alt="EmberConf 2019" src="/images/emberconf-2019-logo.svg">
 
-{{#markdown-content}}
-# This is some markdown
+        <h1>Broccoli Plugin Tutorial</h1>
+    </div>
+</header>
+<section class="container body">
+    <nav>
+        {{#link-to 'index'}}Home{{/link-to}}
+        {{#link-to 'inline'}}Inline Markdown{{/link-to}}
+        {{#link-to 'blog.index'}}Blog Markdown{{/link-to}}
+        {{#link-to 'blog.path' 'bar.html'}}Blog file{{/link-to}}
+        {{#link-to 'blog.path' 'baz'}}Blog folder{{/link-to}}
+    </nav>
 
-Isn't it cool?
-{{/markdown-content}}
-
-{{outlet}}
+    <div class="content">
+        {{outlet}}
+    </div>
+</section>
