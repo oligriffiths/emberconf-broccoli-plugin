@@ -14,6 +14,26 @@ ___
 
 ***
 
+# Syntax highlighting
+
+```js
+/* Brocfile.js */
+
+import SassSourceMaps from 'broccoli-sass-source-maps';
+import Sass from 'sass';
+import babel from 'broccoli-babel-transpiler';
+import merge from 'broccoli-merge-trees';
+
+const compileSass = SassSourceMaps(Sass);
+
+const appRoot = 'app';
+
+const styles = compileSass([appRoot], 'styles/app.scss', 'assets/app.css');
+const scripts = babel(appRoot);
+
+export default () => merge([styles, scripts]);
+```
+
 
 ## Typographic replacements
 

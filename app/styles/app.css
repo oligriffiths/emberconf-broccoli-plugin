@@ -31,6 +31,14 @@ body {
     margin-top: -30px;
 }
 
+.header-anchor {
+    visibility: hidden;
+}
+
+*:hover > .header-anchor {
+    visibility: visible;
+}
+
 a {
     color: #e05d44;
 }
@@ -44,7 +52,7 @@ nav a {
     color: #333;
     text-decoration: none;
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 20px;
     position: relative;
 }
 
@@ -66,4 +74,9 @@ nav a.active::before {
 
 .container.body {
     margin-top: 30px;
+}
+
+.hljs {
+    font-size: 1rem;
+    padding: 1rem;
 }
