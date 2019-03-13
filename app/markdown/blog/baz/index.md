@@ -1,3 +1,3 @@
-# Baz folder
+# Folder index
 
-Baz
+This markdown file is the index file in a folder /bar/baz

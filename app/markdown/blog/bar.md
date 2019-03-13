@@ -1,3 +1,3 @@
-# This is bar file
+# This is markdown file
 
-Bar file
+This file is referenced directly as a file /blog/bar.html
