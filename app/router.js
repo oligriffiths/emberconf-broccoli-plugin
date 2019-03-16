@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('blog.index', { path: '/blog' });
   this.route('blog.path', { path: '/blog/*path' });
   this.route('inline');
+  this.route('markdown');
 });
 
 export default Router;
